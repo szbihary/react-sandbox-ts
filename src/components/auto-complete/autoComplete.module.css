@@ -1,0 +1,48 @@
+.autoComplete {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.resultList {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 110%;
+  left: 0;
+  right: -20px;
+  font-size: 14px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.listItem {
+  padding: 6px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  color: black;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listItem:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
